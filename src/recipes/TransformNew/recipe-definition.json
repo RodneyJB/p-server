@@ -1,0 +1,31 @@
+{
+  "name": "TransformNew",
+  "kind": "block",
+  "type": "action",
+  "actionKind": "customAction",
+  "url": "https://p-server-taab.onrender.com/transform-new",
+  "title": "Transform column text",
+  "description": "Applies transformation to text columns",
+  "inputFields": [
+    {
+      "key": "sourceColumnId",
+      "type": "column",
+      "label": "Text to transform",
+      "required": true,
+      "columnTypes": ["text", "long-text"]
+    },
+    {
+      "key": "targetColumnId",
+      "type": "column",
+      "label": "Where to place result",
+      "required": true,
+      "columnTypes": ["text", "long-text"]
+    },
+    {
+      "key": "transformationType",
+      "type": "list",
+      "label": "Transformation type",
+      "remoteOptionsUrl": "https://p-server-taab.onrender.com/monday/get_remote_list_options"
+    }
+  ]
+}

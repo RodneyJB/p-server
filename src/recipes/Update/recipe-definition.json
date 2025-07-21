@@ -1,0 +1,46 @@
+{
+  "name": "Update",
+  "kind": "block",
+  "type": "action",
+  "actionKind": "customAction",
+  "url": "https://p-server-taab.onrender.com/update",
+  "title": "When item is created, update files and text",
+  "description": "Processes PDF/XML files and loads text or creates new items.",
+  "inputFields": [
+    {
+      "key": "processing_mode",
+      "type": "list",
+      "label": "How should files be processed?",
+      "remoteOptionsUrl": "https://p-server-taab.onrender.com/monday/get_remote_list_options",
+      "required": true
+    },
+    {
+      "key": "file_column_id",
+      "type": "column",
+      "label": "File column to upload into",
+      "required": true,
+      "columnTypes": ["file"]
+    },
+    {
+      "key": "text_column_id",
+      "type": "column",
+      "label": "Text column to write all content into",
+      "required": false,
+      "columnTypes": ["long-text", "text"]
+    },
+    {
+      "key": "skip_pdf",
+      "type": "list",
+      "label": "Skip PDF files?",
+      "remoteOptionsUrl": "https://p-server-taab.onrender.com/monday/get_remote_list_options",
+      "required": false
+    },
+    {
+      "key": "skip_xml",
+      "type": "list",
+      "label": "Skip XML files?",
+      "remoteOptionsUrl": "https://p-server-taab.onrender.com/monday/get_remote_list_options",
+      "required": false
+    }
+  ]
+}

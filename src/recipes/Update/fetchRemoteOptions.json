@@ -1,0 +1,8 @@
+{
+  "data": [
+    { "id": "move_all", "name": "Move all files" },
+    { "id": "combine_pdf", "name": "Combine PDFs, move others" },
+    { "id": "split_pdf", "name": "Split PDFs into items with matching XML" },
+    { "id": "Fake", "name": "fake selection." }
+  ]
+}

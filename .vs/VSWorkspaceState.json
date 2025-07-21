@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\controllers",
+    "\\src\\middlewares",
+    "\\src\\recipes",
+    "\\src\\recipes\\AssignPerson",
+    "\\src\\recipes\\TransformText",
+    "\\src\\recipes\\Update",
+    "\\src\\routes",
+    "\\src\\services"
+  ],
+  "PreviewInSolutionExplorer": false
+}
