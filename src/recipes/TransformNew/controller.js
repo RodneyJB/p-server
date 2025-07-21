@@ -2,7 +2,7 @@ const { transformText } = require('./service');  // fixed path
 
 const mondayService = require('../../services/monday-service');
 
-exports.handle = async (req, res) => {
+exports.handler = async (req, res) => {
   const { shortLivedToken } = req.session;
   const { payload } = req.body;
   const { boardId, itemId, sourceColumnId, targetColumnId, transformationType } = payload.inputFields;
