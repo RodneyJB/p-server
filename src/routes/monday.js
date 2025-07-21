@@ -4,13 +4,13 @@ const mondayController = require('../controllers/monday-controller');
 
 
 
-const transformNewController = require('../recipes/transform/controller');
-const updateController = require('../recipes/updates/controller');
-const xyzController = require('../recipes/zyx/controller');
+const transformController = require('../recipes/transform/controller');
+const updatesController = require('../recipes/updates/controller');
+const zyxController = require('../recipes/zyx/controller');
 
-router.post('/monday/transform', authenticationMiddleware, transformNewController.handler);
-router.post('/monday/updates', authenticationMiddleware, updateController.handler);
-router.post('/monday/zyx', authenticationMiddleware, xyzController.handler);
+router.post('/monday/transform', authenticationMiddleware, transformController.handler);
+router.post('/monday/updates', authenticationMiddleware, updatesController.handler);
+router.post('/monday/zyx', authenticationMiddleware, zyxController.handler);
 
 
 
