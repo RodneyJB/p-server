@@ -9,8 +9,8 @@ const updateController = require('../recipes/updates/controller');
 const xyzController = require('../recipes/zyx/controller');
 
 router.post('/monday/transform', authenticationMiddleware, transformNewController.handler);
-router.post('/monday/update', authenticationMiddleware, updateController.handler);
-router.post('/monday/xyz', authenticationMiddleware, xyzController.handler);
+router.post('/monday/updates', authenticationMiddleware, updateController.handler);
+router.post('/monday/zyx', authenticationMiddleware, xyzController.handler);
 
 
 
