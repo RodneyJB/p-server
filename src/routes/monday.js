@@ -5,7 +5,7 @@ const mondayController = require('../controllers/monday-controller');
 
 
 // ✅ ADD: Import for TransformNew controller
-const transformNewController = require('../recipes/TransformNew/controller');
+const transformNewController = require('../recipes/transformnew/controller');
 // ✅ ADD: TransformNew integration
 router.post('/monday/transform-new', authenticationMiddleware, transformNewController.handler);
 
