@@ -1,5 +1,5 @@
 const mondayService = require('../services/monday-service');
-const { MODE_OPTIONS, BOOL_OPTIONS } = require('../recipes/Update/constants');
+const { MODE_OPTIONS, BOOL_OPTIONS } = require('../recipes/updates/constants');
 
 async function executeAction(req, res) {
   const { shortLivedToken } = req.session;
