@@ -4,17 +4,16 @@ const mondayController = require('../controllers/monday-controller');
 
 
 
-// ✅ ADD: Import for TransformNew controller
+const assignPersonController = require('../recipes/assignperson/controller');
 const transformNewController = require('../recipes/transformnew/controller');
-// ✅ ADD: TransformNew integration
-router.post('/monday/transform-new', authenticationMiddleware, transformNewController.handler);
+const updateController = require('../recipes/update/controller');
+const xyzController = require('../recipes/xyz/controller');
 
+router.post('/monday/assignperson', authenticationMiddleware, assignPersonController.handler);
+router.post('/monday/transformnew', authenticationMiddleware, transformNewController.handler);
+router.post('/monday/update', authenticationMiddleware, updateController.handler);
+router.post('/monday/xyz', authenticationMiddleware, xyzController.handler);
 
-// Handle the action for executing the update (e.g., when a new item is created)
-router.post('/monday/execute_action', authenticationMiddleware, mondayController.executeAction);
-
-// Handle the remote options for the Update recipe (e.g., for selecting modes)
-router.post('/monday/get_remote_list_options', authenticationMiddleware, mondayController.getRemoteListOptions);
 
 
 module.exports = router;
