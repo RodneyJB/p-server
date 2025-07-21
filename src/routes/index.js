@@ -3,7 +3,7 @@ const mondayRoutes = require('./monday');
 
 // Load controllers
 const updateController = require('../recipes/Update/controller');
-const transformNewController = require('../recipes/TransformNew/controller');
+const transformNewController = require('../recipes/transformnew/controller');
 // const assignController = require('../recipes/AssignPerson/controller');
 
 router.use(mondayRoutes);
