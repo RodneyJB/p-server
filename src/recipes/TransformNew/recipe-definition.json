@@ -3,7 +3,7 @@
   "kind": "block",
   "type": "action",
   "actionKind": "customAction",
-  "url": "https://p-server-taab.onrender.com/transform-new",
+  "url": "https://p-server-taab.onrender.com/monday/transform-new",
   "title": "Transform column text",
   "description": "Applies transformation to text columns",
   "inputFields": [
